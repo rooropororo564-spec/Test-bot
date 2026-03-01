@@ -9,11 +9,11 @@ dp = Dispatcher()
 
 @dp.message(Command("start"))
 async def start(message: types.Message):
-    await message.answer("Привет! Как дела? 👋")
+    await message.answer("Привет! че каво? 👋")
 
 @dp.message()
 async def echo(message: types.Message):
-    await message.answer("Привет! Как дела? 👋")
+    await message.answer("Привет! че каво? 👋")
 
 async def main():
     await dp.start_polling(bot)
