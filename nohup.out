@@ -1,0 +1,111 @@
+Traceback (most recent call last):
+  File "/root/Test-bot/bot.py", line 22, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/root/Test-bot/bot.py", line 19, in main
+    await dp.start_polling(bot)
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/dispatcher/dispatcher.py", line 621, in start_polling
+    await asyncio.gather(*done)
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/dispatcher/dispatcher.py", line 377, in _polling
+    user: User = await bot.me()
+                 ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/bot.py", line 361, in me
+    self._me = await self.get_me()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/bot.py", line 1797, in get_me
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/bot.py", line 487, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/session/base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/session/aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/session/base.py", line 127, in check_response
+    raise TelegramUnauthorizedError(method=method, message=description)
+aiogram.exceptions.TelegramUnauthorizedError: Telegram server says - Unauthorized
+Traceback (most recent call last):
+  File "/root/Test-bot/bot.py", line 22, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/root/Test-bot/bot.py", line 19, in main
+    await dp.start_polling(bot)
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/dispatcher/dispatcher.py", line 621, in start_polling
+    await asyncio.gather(*done)
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/dispatcher/dispatcher.py", line 377, in _polling
+    user: User = await bot.me()
+                 ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/bot.py", line 361, in me
+    self._me = await self.get_me()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/bot.py", line 1797, in get_me
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/bot.py", line 487, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/session/base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/session/aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/session/base.py", line 127, in check_response
+    raise TelegramUnauthorizedError(method=method, message=description)
+aiogram.exceptions.TelegramUnauthorizedError: Telegram server says - Unauthorized
+Traceback (most recent call last):
+  File "/root/Test-bot/bot.py", line 22, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/root/Test-bot/bot.py", line 19, in main
+    await dp.start_polling(bot)
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/dispatcher/dispatcher.py", line 621, in start_polling
+    await asyncio.gather(*done)
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/dispatcher/dispatcher.py", line 377, in _polling
+    user: User = await bot.me()
+                 ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/bot.py", line 361, in me
+    self._me = await self.get_me()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/bot.py", line 1797, in get_me
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/bot.py", line 487, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/session/base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/session/aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/aiogram/client/session/base.py", line 127, in check_response
+    raise TelegramUnauthorizedError(method=method, message=description)
+aiogram.exceptions.TelegramUnauthorizedError: Telegram server says - Unauthorized
